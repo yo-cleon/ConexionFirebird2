@@ -30,7 +30,7 @@ public class Datos {
     public void conectar(){
         try{
             Class.forName("org.firebirdsql.jdbc.FBDriver");
-            conexion = DriverManager.getConnection("jdbc:firebirdsql:localhost/3050:"
+            conexion = DriverManager.getConnection("jdbc:firebirdsql:localhost/3055:"
                     +PATH+"\\data\\EJERCICIO03.fdb", USER, PASS);
         } catch (SQLException sqle){
             System.out.println("Error en la conexión:\n"+sqle.getMessage());
